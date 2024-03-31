@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login And Registration Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="log">
+        <div class="form_box">
+            <div class="button_box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="/img/facebook.jpg" alt="FB">
+                <img src="/img/Google.jpg" alt="GOOGLE">
+                <img src="/img/Twitter.png" alt="TWIT">
+            </div>
+            <form id="login" class="input_group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" id="password" placeholder="Enter Password" required>
+                <img src="/img/eye_hide.png" id="eyeicon">
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <form id="register" class="input_group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="password" class="input-field" id="password" placeholder="Enter Password" required>
+                <img src="/img/eye_hide.png" id="eyeicon_r">
+                <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src = "login.js"></script>
+</body>
+</html>
